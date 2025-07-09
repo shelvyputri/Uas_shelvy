@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pilih Jadwal Kursus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="showClock()">
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="daftar.html">📋 Daftar Kursus</a></li>
+      <li><a href="pilih.html">🗓️ Pilih Jadwal</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>📆 Pilih Jadwal Kursus</h2>
+
+    <form id="formJadwal">
+      <div>
+        <label for="nama">Nama:</label><br />
+        <input type="text" id="nama" name="nama" required />
+      </div>
+
+      <div>
+        <label for="hari">Hari:</label><br />
+        <select id="hari" name="hari" required>
+          <option value="">-- Pilih Hari --</option>
+          <option value="Senin">Senin</option>
+          <option value="Selasa">Selasa</option>
+          <option value="Rabu">Rabu</option>
+          <option value="Kamis">Kamis</option>
+          <option value="Jumat">Jumat</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="jam">Waktu:</label><br />
+        <select id="jam" name="jam" required>
+          <option value="">-- Pilih Waktu --</option>
+          <option value="08.00 - 10.00">08.00 – 10.00</option>
+          <option value="10.00 - 12.00">10.00 – 12.00</option>
+          <option value="13.00 - 15.00">13.00 – 15.00</option>
+          <option value="15.00 - 17.00">15.00 – 17.00</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <div id="outputJadwal"></div>
+    <div id="clock"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

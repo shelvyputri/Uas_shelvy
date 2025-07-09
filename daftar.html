@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daftar Kursus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="showClock()">
+
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="daftar.html">📋 Daftar Kursus</a></li>
+      <li><a href="pilih.html">🗓️ Pilih Jadwal</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+  <h2>📝 Form Pendaftaran Kursus</h2>
+
+  <form id="form-daftar">
+    <div>
+      <label for="nik">NIK:</label><br />
+      <input type="text" id="nik" name="nik" required />
+    </div>
+
+    <div>
+      <label for="nama">Nama:</label><br />
+      <input type="text" id="nama" name="nama" required />
+    </div>
+
+    <div>
+      <label for="alamat">Alamat:</label><br />
+      <textarea id="alamat" name="alamat" rows="3" required></textarea>
+    </div>
+
+    <div>
+      <label>Jenis Kelamin:</label><br />
+      <input type="radio" name="gender" value="perempuan" required /> Perempuan
+      <input type="radio" name="gender" value="laki-laki" required /> Laki-laki
+    </div>
+
+    <div>
+      <button type="submit">Daftar</button>
+    </div>
+  </form>
+
+  <div id="outputDaftar"></div>
+  <div id="clock"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
